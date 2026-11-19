@@ -1,6 +1,6 @@
 # repowatch
 
-[![CI](https://github.com/1QEXLE/repowatch/actions/workflows/ci.yml/badge.svg)](https://github.com/1QEXLE/repowatch/actions/workflows/ci.yml)
+[![CI](https://github.com/QexleOSS/repowatch/actions/workflows/ci.yml/badge.svg)](https://github.com/QexleOSS/repowatch/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Dependencies: 0](https://img.shields.io/badge/dependencies-0-brightgreen.svg)
 ![Binary: 2.4 MB](https://img.shields.io/badge/binary-2.4%20MB-lightgrey.svg)
@@ -22,7 +22,7 @@ repowatch builds a ranked structural index of a repository. It reads imports and
 ## Quick start
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/1QEXLE/repowatch/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/QexleOSS/repowatch/main/install.sh | sh
 cd your-project
 repowatch map
 ```
@@ -33,7 +33,7 @@ From source:
 
 ```sh
 ./build.sh        # needs ocamlopt 5.x
-./tests/run.sh    # 43 end-to-end checks
+./tests/run.sh    # 44 end-to-end checks
 ```
 
 ## Map
@@ -192,4 +192,4 @@ repowatch watch                     # rebuild on change, print the new top files
 
 ## Star history
 
-[![Star History Chart](https://api.star-history.com/svg?repos=1QEXLE/repowatch&type=Date)](https://star-history.com/#1QEXLE/repowatch&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=QexleOSS/repowatch&type=Date)](https://star-history.com/#QexleOSS/repowatch&Date)
