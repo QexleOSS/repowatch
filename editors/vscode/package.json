@@ -1,0 +1,27 @@
+{
+  "name": "repowatch",
+  "displayName": "repowatch",
+  "description": "Definitions, references, and workspace symbols from the repowatch index",
+  "version": "1.0.0",
+  "publisher": "qexle",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "repowatch",
+      "properties": {
+        "repowatch.path": {
+          "type": "string",
+          "default": "repowatch",
+          "description": "Path to the repowatch binary"
+        }
+      }
+    }
+  }
+}
