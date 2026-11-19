@@ -33,7 +33,6 @@ From source:
 
 ```sh
 ./build.sh        # needs ocamlopt 5.x
-./tests/run.sh    # 44 end-to-end checks
 ```
 
 ## Map

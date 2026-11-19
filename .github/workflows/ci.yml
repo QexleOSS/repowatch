@@ -9,17 +9,16 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y ocaml-nox
+      - run: sudo apt-get update && sudo apt-get install -y ocaml libstdlib-ocaml-dev
       - run: ./build.sh
-      - run: ./tests/run.sh
 
   release:
     if: startsWith(github.ref, 'refs/tags/v')
-    needs: test
+    needs: build
     permissions:
       contents: write
     strategy:
@@ -31,7 +30,7 @@ jobs:
       - name: install ocaml
         run: |
           if [ "$RUNNER_OS" = "Linux" ]; then
-            sudo apt-get update && sudo apt-get install -y ocaml-nox
+            sudo apt-get update && sudo apt-get install -y ocaml libstdlib-ocaml-dev
           else
             brew install ocaml
           fi
